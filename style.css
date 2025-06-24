@@ -1,0 +1,55 @@
+body {
+  background: #7a1a44;
+  background: radial-gradient(
+    circle,
+    rgba(122, 26, 68, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+h1 {
+  font-family: "Savate", sans-serif;
+  text-align: center;
+}
+form {
+  width: 500px;
+  margin: 50px auto;
+}
+fieldset {
+  border: 5px solid black;
+  border-radius: 15px;
+}
+legend {
+  font-family: fantasy;
+}
+input[type] {
+  border-radius: 15px;
+}
+input:hover {
+  background-color: yellowgreen;
+}
+input:focus {
+  background-color: #3dc694;
+}
+input + p {
+  display: none;
+}
+input:hover + p {
+  display: inline;
+}
+textarea {
+  resize: none;
+}
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}

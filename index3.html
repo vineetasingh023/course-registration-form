@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="FN">First Name</label></td>
+            <td>
+              <input type="text" placeholder="Vineeta" required />
+              <p>Enter Your Name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="SN">surname</label></td>
+            <td>
+              <input type="text" placeholder="Singh" optional />
+              <p>Enter Your Surname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Number</label></td>
+            <td>
+              <input type="tel" placeholder="9988998899" />
+              <p>Enter Phone Number</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">email</label>
+            </td>
+            <td>
+              <input type="email" placeholder="vineeta@gamil.com" required />
+              <p>Enter your email</p>
+              <img src="D:\FRONTEND\verified.png" id="valid" alt="" />
+              <img src="D:\FRONTEND\shape.png" id="invalid" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Password">Password</label></td>
+            <td><input type="password" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="Cpass">Confirm Password</label></td>
+            <td><input type="password" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" value="Male" name="gender" />male
+              <input type="radio" value="Female" name="gender" />female
+              <input type="radio" value="other" name="gender" />other
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="country">Select country</label></td>
+            <td>
+              <select name="country">
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">China</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="File">Upload File</label></td>
+            <td><input type="file" /></td>
+          </tr>
+
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Course Drtails</legend>
+        <table>
+          <tr>
+            <td><label for="sc">Select course</label></td>
+            <td>
+              <select name="sc" id="">
+                <option value="">java full stack</option>
+                <option value="">javaScript</option>
+                <option value="">python</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="dm">Delivery Mode</label></td>
+            <td>
+              <input type="checkbox" />ONLINE <input type="checkbox" />OFFLINE
+            </td>
+          </tr>
+        </table>
+        <label for="comment">Comment</label><br />
+        <textarea rows="5" cols="50" name="" id=""></textarea><br />
+      </fieldset>
+      <br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
